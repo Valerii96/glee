@@ -1,0 +1,17 @@
+body{
+	font-size: 16px;
+	color: $text-color;
+	line-height: 30px;
+	@extend %rubik-400;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.container-large{
+	max-width: 1790px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
