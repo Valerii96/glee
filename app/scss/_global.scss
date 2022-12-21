@@ -26,3 +26,11 @@ body{
 	margin: 0 auto;
 	padding: 0 10px;
 }
+
+.section__title{
+	@extend %dmsans-700;
+	color: $title-color;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 20px;
+}
