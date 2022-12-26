@@ -114,6 +114,24 @@
 		border-radius: 50%;
 	}
 }
+
+
+.top{
+	background-color: #edf1f4;
+	padding: 30px 0;
+	text-align: center;
+	@extend %rubik-400;
+	color: #222933;
+	&__title{
+		font-size: 36px;
+		line-height: 24px;
+		font-weight: 300;	
+		margin-bottom: 12px;
+	}
+}
+
+
+
 .top-slider__container-wrapper{
 	background-color: #fcd7b6;
 	padding: 200px 0 44px;
@@ -570,6 +588,77 @@
 		border-left: none;
 	}
 }
+
+
+.modal{
+	max-width: 470px;
+	margin: 0 auto;
+	padding: 110px 0;
+	&__form{
+		border-bottom: 2px solid #f6f6f6;
+		padding-bottom: 30px;
+
+	}
+	&__lable{
+		margin-bottom: 20px;
+		display: block;
+		color: #436372;
+		font-size: 14px;
+		@extend %rubik-400;
+	}
+	&__input{
+		display: block;
+		width: 100%;
+		outline: none;
+		font-size: 20px;
+		padding: 0 15px;
+		border: 2px solid #f6f6f6;
+		height: 60px;
+	}
+	&__btn{
+		display: block;
+		border: none;
+		font-size: 18px;
+		color: #fff;
+		@extend %rubik-500;
+		width: 100%;
+		background-color: $prise-color;
+		margin: 35px 0 30px;
+		padding: 30px 0;
+		line-height: 1px;
+	}
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+		color: #436372;
+		font-size: 14px;
+		@extend %rubik-400;
+	}
+	&__lost{
+		color: inherit;
+	}
+}
+.registration{
+	text-align: center;
+	margin-top: 30px;
+	color: #436372;
+	&__link{
+		width: 100%;
+		border: 2px solid $prise-color;
+		color: $text-color;
+		font-size: 18px;
+		@extend %rubik-500;
+		display: block;
+		padding: 15px 0;
+		margin-top: 20px;
+	}
+}
+.partners__page{
+	margin-top: 0;
+	padding: 80px 0;
+}
+
+
 
 
 
