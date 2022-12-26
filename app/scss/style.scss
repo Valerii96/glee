@@ -658,6 +658,41 @@
 	padding: 80px 0;
 }
 
+.page-404{
+	padding: 100px 0 120px;
+	&__wrapper{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__content{
+		max-width: 570px;
+	}
+	&__title{
+		font-size: 48px;
+		line-height: 26px;
+		color: #28384f;
+		margin-bottom: 30px;
+		@extend %dmsans-700;
+	}
+	&__text{
+		font-size: 16px;
+		line-height: 26px;
+		color: #8d8d8d;
+		@extend %dmsans-500;
+		max-width: 460px;
+		margin-bottom: 60px;
+	}
+	&__link{
+		text-transform: uppercase;
+		@extend %dmsans-400;
+		color: #fff;
+		border: none;
+		background-color: $prise-color;
+		width: 180px;
+		padding: 15px 30px;
+	}
+}
 
 
 
