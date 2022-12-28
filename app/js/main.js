@@ -8,6 +8,20 @@ $(function (){
 		dotsClass: 'top-slider__dots'
 	});
 
+$('.filters-price__input').ionRangeSlider({
+	type: "double",
+	prefix: "$",
+	onStart: function (data){
+		$('.filters-price__from').text(data.from);
+		$('.filters-price__to').text(data.to);
+	},
+	onChange: function (data) {
+		$('.filters-price__from').text(data.from);
+		$('.filters-price__to').text(data.to);
+},
+});
+
+
 
 
 

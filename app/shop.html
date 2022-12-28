@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Glee.</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container-large">
+			<div class="header__wrapper">
+				<a class="logo" href="#">
+					<img class="logo__img" src="images/logo.png" alt="#">
+				</a>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<a class="menu__list-link menu__list-link--active" href="#">Home</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">About</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">Services</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">Pages</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">News</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="user-nav">
+					<ul class="user-nav__list">
+						<li class="user-nav__item user-nav__item--search">
+							<a class="user-nav__link">
+								<img class="user-nav__img" src="images/icons/search.svg" alt="search">
+							</a>
+						</li>
+						<li class="user-nav__item user-nav__item--heart">
+							<a class="user-nav__link">
+								<img class="user-nav__img" src="images/icons/heart.svg" alt="like">
+								<span class="user-nav__num">0</span>
+							</a>
+						</li>
+						<li class="user-nav__item user-nav__item--cart">
+							<a class="user-nav__link">
+								<img class="user-nav__img" src="images/icons/cart.svg" alt="cart">
+								<span class="user-nav__num">0</span>
+							</a>
+						</li>
+						<li class="user-nav__item user-nav__item--category">
+							<a class="user-nav__link">
+								<img class="user-nav__img" src="images/icons/category.svg" alt="category">
+							</a>
+						</li>
+					</ul>															
+				</div>
+			</div>
+		</div>
+	</header>
+<main class="main">
+
+	<section class="top">
+		<div class="container">
+			<h1 class="top__title">
+				Product list 
+			</h1>
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="#">
+							Home
+						</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<span class="breadcrumbs__link" href="#">
+							Product list 
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="shop">
+		<div class="container">
+			<div class="shop__wrapper">
+				<div class="shop__filters filters">
+					<div class="filters-category filters-item">
+						<h3 class="shop__filters-title">
+							CATEGORY
+						</h3>
+						<form class="filters-category__form" action="#">
+							<label class="filters-category__label">
+								<input class="filters-category__input" type="checkbox">
+								<div class="filters-category__checkbox">
+									<span class="filters-category__text">Chair</span>
+									<img class="filters-category__img" src="images/icons/arrow-category.svg" alt="arrow">
+								</div>		
+							</label>
+							<label class="filters-category__label">
+								<input class="filters-category__input" type="checkbox">
+								<div class="filters-category__checkbox">
+									<span class="filters-category__text">Table</span>
+									<img class="filters-category__img" src="images/icons/arrow-category.svg" alt="arrow">
+								</div>		
+							</label>
+							<label class="filters-category__label">
+								<input class="filters-category__input" type="checkbox">
+								<div class="filters-category__checkbox">
+									<span class="filters-category__text">Lamp</span>
+									<img class="filters-category__img" src="images/icons/arrow-category.svg" alt="arrow">
+								</div>		
+							</label>
+							<label class="filters-category__label">
+								<input class="filters-category__input" type="checkbox">
+								<div class="filters-category__checkbox">
+									<span class="filters-category__text">Watch</span>
+									<img class="filters-category__img" src="images/icons/arrow-category.svg" alt="arrow">
+								</div>		
+							</label>
+							<label class="filters-category__label">
+								<input class="filters-category__input" type="checkbox">
+								<div class="filters-category__checkbox">
+									<span class="filters-category__text">Clock</span>
+									<img class="filters-category__img" src="images/icons/arrow-category.svg" alt="arrow">
+								</div>		
+							</label>
+						</form>
+					</div>
+					<div class="filters-price filters-item">
+						<h3 class="shop__filters-title">
+							PRICE
+						</h3>
+						<form class="filters-price__form" action="#">
+							<input class="filters-price__input" type="text" data-min="100"
+							data-max="500"
+							data-from="200"
+							data-to="350">
+							<label class="filters-price__label">
+								$<span class="filters-price__from"></span>
+								$<span class="filters-price__to"></span>
+							</label>
+						</form>
+					</div>
+					<div class="filters-brands filters-item">
+						<h3 class="shop__filters-title">
+							BRAND
+						</h3>
+						<form class="filters-brands__form" action="#">
+							<label class="filters-brands__label">
+								<input class="filters-brands__input" type="checkbox">
+								<div class="filters-brands__checkbox">
+									<span class="filters-brands__text">RFL</span>
+									<span class="filters-brands__price">(10)</span>
+								</div>		
+							</label>
+							<label class="filters-brands__label">
+								<input class="filters-brands__input" type="checkbox">
+								<div class="filters-brands__checkbox">
+									<span class="filters-brands__text">Brothers</span>
+									<span class="filters-brands__price">(21)</span>
+								</div>		
+							</label>
+							<label class="filters-brands__label">
+								<input class="filters-brands__input" type="checkbox">
+								<div class="filters-brands__checkbox">
+									<span class="filters-brands__text">Regal</span>
+									<span class="filters-brands__price">(3)</span>
+								</div>		
+							</label>
+							<label class="filters-brands__label">
+								<input class="filters-brands__input" type="checkbox">
+								<div class="filters-brands__checkbox">
+									<span class="filters-brands__text">Nadia</span>
+									<span class="filters-brands__price">(14)</span>
+								</div>		
+							</label>
+							<label class="filters-brands__label">
+								<input class="filters-brands__input" type="checkbox">
+								<div class="filters-brands__checkbox">
+									<span class="filters-brands__text">Otobi</span>
+									<span class="filters-brands__price">(6)</span>
+								</div>		
+							</label>
+						</form>
+					</div>
+				</div>
+				<div class="shop__content">
+
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top__item footer-top__contact">
+					<a class="logo" href="#">
+						<img class="logo__img" src="images/logo.png" alt="#">
+					</a>
+					<a class="footer-top__address" href="#">
+						<span>ADDRESS:</span> 
+						4772 Wines Lane
+						Houston, TX 77032
+					</a>
+					<a class="footer-top__tel" href="tel:+8323475843">
+						<span>Telephone:</span> 
+						+832-347-5843
+					</a>
+					<a class="footer-top__mail" href="mailto:contact@Glee.com">
+						<span>Email:</span> 
+						contact@Glee.com
+					</a>
+				</div>
+				<div class="footer-top__item footer-top__nav">
+					<h5 class="footer-top__title">Services</h5>
+					<ul class="footer-top__list">
+						<li class="footer-top__item">
+							<a class="footer-top_link" href="#">About us</a>
+						</li>
+						<li class="footer-top__item">
+							<a class="footer-top_link" href="#">Return Policy</a>
+						</li>
+						<li class="footer-top__item">
+							<a class="footer-top_link" href="#">Our Blog</a>
+						</li>
+						<li class="footer-top__item">
+							<a class="footer-top_link" href="#">Contact Us</a>
+						</li>
+						<li class="footer-top__item">
+							<a class="footer-top_link" href="">Terms & Condition</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-top__item footer-top__account">
+					<h5 class="footer-top__title">Account</h5>
+					<ul class="footer-top__list">
+						<li class="footer-top__item">
+							<a class="footer-top_link" href="#">Your Account</a>
+						</li>
+						<li class="footer-top__item">
+							<a class="footer-top_link" href="#">Checkout</a>
+						</li>
+						<li class="footer-top__item">
+							<a class="footer-top_link" href="#">Login</a>
+						</li>
+						<li class="footer-top__item">
+							<a class="footer-top_link" href="#">Register</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-top__item footer-top__item--form">
+					<h5 class="footer-top__title">Newsletter</h5>
+					<p class="footer-top__text">
+						Subscribe by our newsletter and get update protidin.
+					</p>
+					<form class="footer-top__form" action="#">
+						<input class="footer-top__input" type="email" placeholder="Email address" required>
+						<button class="footer-top__btn" type="submit">Subscribe</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p class="footer-bottom__text">©2020 CopyRight Example. All rights reserved.</p>
+				<ul class="footer-bottom__menu">
+					<li class="footer-bottom__menu-item">
+						<a class="footer-bottom__menu-link" href="#">Home</a>
+					</li>
+					<li class="footer-bottom__menu-item">
+						<a class="footer-bottom__menu-link" href="#">About</a>
+					</li>
+					<li class="footer-bottom__menu-item">
+						<a class="footer-bottom__menu-link" href="#">Blog</a>
+					</li>
+					<li class="footer-bottom__menu-item">
+						<a class="footer-bottom__menu-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/main.min.js"></script>
+</body>
+</html>

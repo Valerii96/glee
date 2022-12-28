@@ -27,3 +27,10 @@ $prise-color: #a3bbc8;
 	font-family: 'Rubik-Regular', sans-serif;
 	font-weight: 400;
 }
+%checkbox-hiden{
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	position: absolute;
+}
