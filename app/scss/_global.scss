@@ -63,3 +63,41 @@ body{
 		@extend %rubik-400;
 	}
 }
+
+.pagination{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 100px;
+	&__list{
+		display: flex;
+		& .pagination__item + .pagination__item{
+			margin-left: 15px;
+		}
+	}
+	&__link{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		border: 1px solid $prise-color;
+		font-size: 16px;
+		color: $text-color;
+	}
+	&__link--active{
+		background-color: $prise-color;
+		color: #fff;
+	}
+	&__next{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 72px;
+		height: 50px;
+		border: 1px solid $prise-color;
+		font-size: 16px;
+		color: $text-color;
+		margin-left: 15px;
+	}
+}

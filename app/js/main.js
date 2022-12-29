@@ -21,6 +21,14 @@ $('.filters-price__input').ionRangeSlider({
 },
 });
 
+$(".filters-recent__rate").rateYo({
+	starWidth: "12px",
+	readOnly: true,
+	normalFill: "#d6d6d6",
+	ratedFill: "#ffcc00",
+});
+
+
 
 
 
