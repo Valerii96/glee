@@ -955,6 +955,168 @@
 	width: 270px;
 }
 
+// DETAIL PAGE
+.details{
+	padding: 120px 0 100px;
+}
+.details-item{
+	&__wrapper{
+		display: flex;
+		align-items: center;
+	}
+	&__slides{
+		width: 550px;
+		margin-right: 65px;
+		display: flex;
+	}
+	&__content{
+		max-width: 555px;
+		@extend %rubik-400;
+	}
+	&__title{
+		font-size: 40px;
+		line-height: 26px;
+		color: #333;
+		@extend %rubik-400;
+		margin-bottom: 15px;
+	}
+	&__raiting{
+		width: 103px !important;
+		svg{
+			margin-right: 3px;
+		}
+	}
+	&__price{
+		display: inline-block;
+		font-size: 30px;
+		color: #333;
+		margin: 30px 0;
+	}
+	&__text{
+		color: $text-color;
+		margin-bottom: 30px;
+	}
+	&__btn{
+		background-color: $prise-color;
+		border: none;
+		padding: 11px 50px;
+		color: #fff;
+		text-transform: uppercase;
+		@extend %rubik-400;
+		border-radius: 8px;
+		margin-left: 15px;
+	}
+}
+.details-slide__thumb{
+	width: 138px;
+	margin-right: 25px;
+	&-item{
+		margin-bottom: 25px;
+		width: 140px;
+		height: 160px;
+		border: 2px solid #f2f2f2;
+		cursor: pointer;
+		img{
+			width: 140px;
+			height: 150px;
+			object-fit: contain;
+		}
+	}
+}
+.details-slide__big{
+	width: 385px;
+	height: 556px;
+	border: 2px solid #f2f2f2;
+}
+.details-slide__thumb-big{
+	width: 385px;
+	height: 530px;
+	img{
+		width: 385px;
+		height: 530px;
+		object-fit: contain;
+	}
+}
+.details-info{
+	margin-top: 45px;
+	color: $text-color;
+	&__item{
+		display: flex;
+	}
+	&__title{
+		margin-right: 6px;
+	}
+}
+
+.details-item__form{
+	.jq-number__field{
+		height: 50px;
+		
+    border-radius: 0;
+	}
+	.details-item__number{
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		padding: 15px 8px;
+		color: #5c5c5c;
+		font-size: 15px;
+		@extend %rubik-400;
+		border: none;
+		outline: none;
+		border: 1px solid $prise-color;
+	}
+	.jq-number{
+		padding: 0;
+		position: relative;
+		margin: 0 50px;
+		width: 52px;
+		height: 52px;
+		border: none;
+	}
+	.jq-number__spin {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid $prise-color;
+    border-radius: 0;
+    cursor: pointer;
+		&::before{
+			content: '';
+			background-color: #333;
+			width: 9px;
+			height: 1px;
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+		}
+	}
+	.jq-number__spin.plus{
+		left: 50px;
+		&::after{
+			content: '';
+			background-color: #333;
+			width: 1px;
+			height: 9px;
+			position: absolute;
+			top: 50%;
+			right: 24px;
+			transform: translateY(-50%);
+		}
+	}
+		
+
+	
+	.jq-number__spin .plus{
+
+	}
+
+}
+	
+
 
 
 

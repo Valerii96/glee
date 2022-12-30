@@ -8,6 +8,27 @@ $(function (){
 		dotsClass: 'top-slider__dots'
 	});
 
+	$('.details-slide__thumb').slick({
+		asNavFor: '.details-slide__big',
+		focusOnSelect: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		vertical: true,
+		draggable: false,
+		arrows: false,
+	});
+	$('.details-slide__big').slick({
+		asNavFor: '.details-slide__thumb',
+		draggable: false,
+		arrows: false,
+		fade: true
+	});
+
+
+$('.details-item__number').styler();
+
+
+
 $('.filters-price__input').ionRangeSlider({
 	type: "double",
 	prefix: "$",
@@ -23,6 +44,12 @@ $('.filters-price__input').ionRangeSlider({
 
 $(".filters-recent__rate").rateYo({
 	starWidth: "12px",
+	readOnly: true,
+	normalFill: "#d6d6d6",
+	ratedFill: "#ffcc00",
+});
+$(".details-item__raiting").rateYo({
+	starWidth: "18px",
 	readOnly: true,
 	normalFill: "#d6d6d6",
 	ratedFill: "#ffcc00",
