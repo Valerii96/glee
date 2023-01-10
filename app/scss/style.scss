@@ -464,15 +464,33 @@
 		margin-bottom: auto;
 	}
 	&__inner-date{
-		font-size: 12px;
-		color: #222933;
-		@extend %rubik-400;
 		margin-right: 20px;
+		padding-left: 20px;
+		position: relative;
+		&::before{
+			content: url(../images/icons/calendar.svg);
+			left: 0;
+			position: absolute;
+			top: -7px;
+		}
+	}
+	&__inner-people{
+		padding-left: 20px;
+		position: relative;
+		&::before{
+			content: url(../images/icons/account.svg);
+			left: 0;
+			position: absolute;
+			top: -7px;
+		}
 	}
 	&__prise-wrapper{
 		border-top: 1px solid #e0e0e0;
 		padding-top: 15px;
 		margin-top: 13px;
+		font-size: 12px;
+		color: #222933;
+		@extend %rubik-400;
 	}
 }
 .partners{
@@ -1159,10 +1177,10 @@
  &__btn{
 	border: none;
 	background-color: transparent;
-	&:hover{
-		rect{
-			stroke: $prise-color;
-		}
+ }
+ .slick-disabled{
+	rect {
+		stroke: #EDF1F4;
 	}
  }
  .product__item-img{
@@ -1173,7 +1191,6 @@
   margin-left: -40px;
  }
  .product__item{
-	// margin: 15px;
 	box-shadow: 0px 6px 35px 3px rgb(37 37 37 / 5%);
  }
  .slick-list{
@@ -1182,11 +1199,138 @@
 	width: 1280px;
   padding-left: 40px;
  }
-//  .slick-slide.slick-active{
-// 	width: 270px !important;
-// 	margin-right: 30px;
-//  }
+
 }
+
+.blog{
+	padding: 120px 0;
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__content{
+		.blog__item + .blog__item{
+			margin-top: 50px;
+		}
+	}
+	&__item-img{
+		width: 830px;
+		height: 500px;
+		object-fit: cover;
+	}
+	&__item{
+		max-width: 830px;
+	}
+	&__item-inner{
+		position: relative;
+		margin-bottom: 30px;
+	}
+	&__item-info{
+		position: absolute;
+		background-color: $prise-color;
+		padding: 20px;
+		color: #fff;
+		font-size: 12px;
+		bottom: 0;
+		left: 0;
+	}
+	&__item-date{
+		&::before{
+			content: url(..//images/icons/calendar-white.svg);
+		}
+	}
+	&__item-people{
+		&::before{
+			content: url(..//images/icons/account-white.svg);
+		}
+	}
+	&__item-title{
+		font-size: 36px;
+		color: #333;
+		@extend %rubik-400;
+		margin-bottom: 30px;
+	}
+	&__item-link{
+		display: inline-block;
+		padding: 14px 20px;
+		border: 1px solid $prise-color;
+		position: relative;
+		color: $prise-color;
+		margin-top: 30px;
+		&::after{
+			content: url(../images/blog/arrow-btn.jpg);
+			margin-left: 50px;
+		}
+	}
+	&__pagination{
+		justify-content: start;
+		padding-top: 75px;
+	}
+}
+
+
+
+
+.filters-search{
+	&__form{
+		display: flex;
+		align-items: center;
+	}
+	&__input{
+		height: 40px;
+		border: 2px solid #eef2f5;
+		outline: none;
+		padding: 5px 55px 5px 10px;
+		border-radius: 5px;
+		width: 100%;
+	}
+	&__btn{
+		height: 40px;
+		width: 48px;
+		background-color: #eef2f5;
+		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+		margin-left: -48px;
+	}
+}
+.filters-posts{
+	&__item{
+		display: flex;
+	}
+	&__img{
+		width: 70px;
+		height: 70px;
+		margin-right: 20px;
+	}
+	&__wrapper{
+		.filters-posts__item + .filters-posts__item{
+			margin-top: 20px;
+		}
+	}
+	&__title{
+		color: #333333;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 400;
+	}
+	&__date{
+		color: #a7a7a7;
+		font-size: 12px;
+		position: relative;
+		padding-left: 20px;
+		text-transform: uppercase;
+		&::before{
+			content: url(../images/icons/calendar.svg);
+			position: absolute;
+			left: 0;
+			top: -6px;
+		}
+	}
+}
+
 
 
 
