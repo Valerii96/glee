@@ -81,8 +81,6 @@ $(".details-item__raiting").rateYo({
 
 
 
-
-
 var containerEl1 = document.querySelector('[data-ref="container-1"]');
 var containerEl2 = document.querySelector('[data-ref="container-2"]');
 
@@ -100,4 +98,104 @@ var mixer2 = mixitup(containerEl2, config);
 
 });
 
+let map;
 
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 29.760813798095302, lng: -95.37043700988023 },
+    zoom: 9,
+		styles:
+		[
+      { elementType: "geometry", stylers: [{ color: "#f1f1f1" }] },
+			{ elementType: "labels.text.fill", stylers: [{ color: "#575757" }] },
+			{ elementType: "labels.text.stroke", stylers: [{ color: "#f5f1e6" }] },
+			{
+        featureType: "administrative",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#e1dddd" }],
+      },
+			{
+        featureType: "administrative.land_parcel",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#cebfba" }],
+      },
+			{
+        featureType: "administrative.land_parcel",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#ae9e90" }],
+      },
+			{
+        featureType: "landscape.natural",
+        elementType: "geometry",
+        stylers: [{ color: "#ddd9d7" }],
+      },
+      {
+        featureType: "poi",
+        elementType: "geometry",
+        stylers: [{ color: "#cebfba" }],
+      },
+			{
+        featureType: "poi",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#93817c" }],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#bec5b8" }],
+      },
+			{
+        featureType: "poi.park",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#447530" }],
+      },
+      {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [{ color: "#bd9488" }],
+      },
+			{
+        featureType: "road.arterial",
+        elementType: "geometry",
+        stylers: [{ color: "#e6e5e4" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry",
+        stylers: [{ color: "#bd9488" }],
+      },
+			{
+        featureType: "road.highway",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#bd9488" }],
+      },
+      {
+        featureType: "road.highway.controlled_access",
+        elementType: "geometry",
+        stylers: [{ color: "#bd9488" }],
+      },
+			{
+        featureType: "road.highway.controlled_access",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#db8555" }],
+      },
+      {
+        featureType: "road.local",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#806b63" }],
+      },
+			{
+        featureType: "water",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#638e99" }],
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#ffffff" }],
+      },
+		]
+  });
+}
+
+window.initMap = initMap;
