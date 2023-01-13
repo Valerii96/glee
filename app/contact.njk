@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Glee.</title>
+	<link rel="stylesheet" href="css/contact.min.css">
+</head>
+<body>
+
+	{% include 'app/module/_header/_header.html'%}
+
+<main class="main">
+
+	{% include 'app/module/_top/_top.html'%}
+	
+	{% include 'app/module/_contact-top/_contact-top.html'%}
+
+	{% include 'app/module/_contact-form/_contact-form.html'%}
+
+	{% include 'app/module/_news/_news.html'%}
+	
+
+</main>
+
+	{% include 'app/module/_footer/_footer.html'%}
+
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ZjfXj2cRtd92bKNKCCm5N0K4swhKeK0&callback=initMap&v=weekly"
+      defer
+    ></script>
+	<script src="js/main.min.js"></script>
+</body>
+</html>

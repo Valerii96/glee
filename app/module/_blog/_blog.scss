@@ -1,0 +1,134 @@
+.blog{
+	padding: 120px 0;
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__content{
+		.blog__item + .blog__item{
+			margin-top: 50px;
+		}
+	}
+	&__item-img{
+		width: 830px;
+		height: 500px;
+		object-fit: cover;
+	}
+	&__item{
+		max-width: 830px;
+	}
+	&__item-inner{
+		position: relative;
+		margin-bottom: 30px;
+	}
+	&__item-info{
+		position: absolute;
+		background-color: $prise-color;
+		padding: 20px;
+		color: #fff;
+		font-size: 12px;
+		bottom: 0;
+		left: 0;
+	}
+	&__item-date{
+		&::before{
+			content: url(..//images/icons/calendar-white.svg);
+		}
+	}
+	&__item-people{
+		&::before{
+			content: url(..//images/icons/account-white.svg);
+		}
+	}
+	&__item-title{
+		font-size: 36px;
+		color: #333;
+		@extend %rubik-400;
+		margin-bottom: 30px;
+	}
+	&__item-link{
+		display: inline-block;
+		padding: 14px 20px;
+		border: 1px solid $prise-color;
+		position: relative;
+		color: $prise-color;
+		margin-top: 30px;
+		&::after{
+			content: url(../images/blog/arrow-btn.jpg);
+			margin-left: 50px;
+		}
+	}
+	&__pagination{
+		justify-content: start;
+		padding-top: 75px;
+	}
+}
+
+
+
+
+.filters-search{
+	&__form{
+		display: flex;
+		align-items: center;
+	}
+	&__input{
+		height: 40px;
+		border: 2px solid #eef2f5;
+		outline: none;
+		padding: 5px 55px 5px 10px;
+		border-radius: 5px;
+		width: 100%;
+	}
+	&__btn{
+		height: 40px;
+		width: 48px;
+		background-color: #eef2f5;
+		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+		margin-left: -48px;
+	}
+}
+.filters-posts{
+	&__item{
+		display: flex;
+	}
+	&__img{
+		width: 70px;
+		height: 70px;
+		margin-right: 20px;
+	}
+	&__wrapper{
+		.filters-posts__item + .filters-posts__item{
+			margin-top: 20px;
+		}
+	}
+	&__title{
+		color: #333333;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 400;
+	}
+	&__date{
+		color: #a7a7a7;
+		font-size: 12px;
+		position: relative;
+		padding-left: 20px;
+		text-transform: uppercase;
+		&::before{
+			content: url(../images/icons/calendar.svg);
+			position: absolute;
+			left: 0;
+			top: -6px;
+		}
+	}
+}
+
+
+.partners__page{
+	margin-top: 0;
+	padding: 80px 0;
+}

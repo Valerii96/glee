@@ -1,0 +1,92 @@
+.top-slider__container-wrapper{
+	background-color: #fcd7b6;
+	padding: 200px 0 44px;
+	position: relative;
+}
+.top-slider{
+	&__item{
+		display: flex !important;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	&__title{
+		font-size: 72px;
+		max-width: 500px;
+		line-height: 70px;
+		margin-bottom: 27px;
+		@extend %rubik-500;
+	}
+	&__decoration{
+		position: absolute;
+		top: 60px;
+		right: 10%;
+	}
+	&__text{
+		font-size: 18px;
+		line-height: 30px;
+		max-width: 370px;
+		margin-bottom: 34px;
+		@extend %rubik-400;
+	}
+	&__link{
+		display: inline-block;
+		font-size: 15px;
+		@extend %rubik-500;
+		color: #fff;
+		background-color: $prise-color;
+		padding: 10px 15px 10px 25px;
+		max-width: 200px;
+		&::after{
+			content: url('../images/arrow-next-slider.png');
+			margin-left: 55px;
+		}
+	}
+	ul.top-slider__dots{
+		display: flex;
+		justify-content: center;
+		margin-top: 200px;
+		li + li{
+			margin-left: 12px;
+		}
+		.slick-active button{
+			background-color: #fff;
+		}
+		button{
+			padding: 0;
+			font-size: 11px;
+			line-height: 30px;
+			color: $text-color;
+			@extend %rubik-500;
+			border: none;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-color: #fde3cc;
+		}
+	}
+}
+.services{
+	background-color: #fef7f0;
+	padding: 50px 0 40px;
+	display: flex;
+	justify-content: space-around;
+	&__item{
+		display: flex;
+		align-items: flex-start;
+	}
+	&__content{
+		max-width: 220px;
+		margin-left: 15px;
+	}
+	&__title{
+		font-size: 18px;
+		line-height: 20px;
+		color: #414141;
+		margin-bottom: 10px;
+	}
+	&__text{
+		font-size: 16px;
+		line-height: 30px;
+		color: #585858;
+	}
+}

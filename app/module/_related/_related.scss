@@ -1,0 +1,40 @@
+.related{
+	margin-bottom: 100px;
+ &__top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 65px;
+ }
+ &__title{
+	color: $text-color;
+	font-size: 36px;
+
+ }
+ &__btn{
+	border: none;
+	background-color: transparent;
+ }
+ .slick-disabled{
+	rect {
+		stroke: #EDF1F4;
+	}
+ }
+ .product__item-img{
+	margin: 0 auto;
+ }
+ &__items{
+	width: 1300px;
+  margin-left: -40px;
+ }
+ .product__item{
+	box-shadow: 0px 6px 35px 3px rgb(37 37 37 / 5%);
+ }
+ .slick-list{
+	height: 440px;
+	padding-top: 20px;
+	width: 1280px;
+  padding-left: 40px;
+ }
+
+}
