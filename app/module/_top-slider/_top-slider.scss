@@ -90,3 +90,79 @@
 		color: #585858;
 	}
 }
+
+
+@media (max-width: 1100px){
+	.top-slider{
+		.slick-slide img{
+			width: 50%;
+		}
+		&__decoration{
+			right: 0;
+		}
+	}
+}
+
+@media (max-width: 940px){
+	.top-slider{
+		&__container-wrapper{
+			padding: 130px 0 44px;
+		}
+		&__title{
+			font-size: 60px;
+		}
+		&__decoration{
+			top: 20px;
+		}
+	}
+	.services{
+		align-items: center;
+		&__img{
+			margin-bottom: 12px;
+		}
+	}
+	.services__item{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+@media (max-width: 780px){
+	.top-slider{
+		.slick-slide img{
+			display: none;
+		}
+		&__content{
+			width: 100%;
+		}
+		&__decoration{
+			left: 0;
+			top: 0;
+		}
+	}
+	.top-slider ul.top-slider__dots{
+		margin-top: 126px;
+	}
+	.services{
+		flex-wrap: wrap;
+		&__item{
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media (max-width: 400px){
+	.top-slider ul.top-slider__dots{
+		margin-top: 50px;
+	}
+	.top-slider__title {
+    font-size: 38px;
+    max-width: 100%;
+    line-height: 43px;
+    margin-bottom: 20px;
+	}
+	.top-slider__decoration{
+		top: 30px;
+	}
+}

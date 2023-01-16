@@ -38,3 +38,53 @@
 .fancybox__backdrop{
 		background: rgba(130, 156, 179, 0.95);
 	}
+
+
+@media (max-width: 1100px){
+	.design {
+    padding-bottom: 60px;
+		&__wrapper{
+			grid-template-columns: repeat(2, 370px);
+			justify-content: center;
+		}
+	}
+	.video{
+		margin-bottom: 50px;
+		height: 350px;
+	}
+}
+
+@media (max-width: 780px){
+	.product__btn-wrapper{
+		margin-bottom: 40px;
+	}
+	.design {
+		&__wrapper{
+			grid-template-columns: repeat(2, 1fr);
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 610px){
+	.design {
+		&__wrapper{
+			grid-template-columns: repeat(1, 370px);
+			justify-content: center;
+		}
+	}
+	.video {
+    height: 250px;
+	}
+	.section__title{
+		font-size: 30px;
+	}
+}
+@media (max-width: 400px){
+	.design {
+		&__wrapper{
+			grid-template-columns: repeat(1, 1fr);
+			justify-content: center;
+		}
+	}
+}
