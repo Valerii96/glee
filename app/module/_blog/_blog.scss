@@ -132,3 +132,64 @@
 	margin-top: 0;
 	padding: 80px 0;
 }
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1150px){
+	.blog{
+		.blog__sidebar{
+		.filters-posts,
+		.filters-category{
+			display: none;
+		}
+	}
+		&__wrapper{
+			flex-direction: column-reverse;
+		}
+		.filters-item{
+			width: 100%;
+		}
+		&__content{
+			width: 100%;
+		}
+		&__item{
+			max-width: 100%;
+		}
+		&__item-img{
+			width: 100%;
+		}
+	}
+	
+}
+
+@media(max-width: 545px){
+	.blog{
+		padding: 60px 0;
+		&__item-img{
+			height: 300px;
+		}
+		&__item-title{
+			font-size: 27px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media(max-width: 400px){
+	.blog{
+		padding: 60px 0;
+		&__item-img{
+			height: 220px;
+		}
+		&__item-title{
+			font-size: 24px;
+		}
+	}
+}
