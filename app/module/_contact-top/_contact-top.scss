@@ -59,3 +59,47 @@
 		color: #565872;
 	}
 }
+
+@media(max-width: 1400px){
+	.contact-top{
+		&__wrapper{
+			column-gap: 15px;
+		}
+	}
+}
+
+@media(max-width: 1030px){
+	.contact-top{
+		padding: 60px 0 60px;
+		&__wrapper{
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+		&__item{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media(max-width: 800px){
+	.contact-top{
+		&__item{
+			max-width: 100%;
+			padding: 20px 30px;
+		}
+		&__item-icon{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media(max-width: 800px){
+	.contact-top{
+		&__item{
+			padding: 20px 10px;
+		}
+		&__title{
+			margin-bottom: 25px;
+		}
+	}
+}

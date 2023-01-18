@@ -5,7 +5,9 @@ $('.menu__btn').on('click', function() {
 });
 
 
-
+$('.shop__filters-btn').on('click', function() {
+	$('.shop__filters').slideToggle();
+});
 
 $('.details-tabs__link').on('click', function (e) {
 	e.preventDefault();
@@ -51,6 +53,26 @@ $('.details-tabs__link').on('click', function (e) {
 		prevArrow: $('.related__btn-prew'),
 		nextArrow: $('.related__btn-next'),
 		infinite: false,
+		responsive: [
+			{
+				breakpoint: 1149,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 851,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 595,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+		]
 	});
 
 $('.details-item__number').styler();

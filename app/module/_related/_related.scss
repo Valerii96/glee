@@ -38,3 +38,66 @@
  }
 
 }
+
+
+@media(max-width: 1400px){
+	.related .slick-list{
+		width: auto;
+	}
+	.related{
+		&__items{
+			width: auto;
+			margin-left: 0;
+		}
+		&__top{
+			margin-bottom: 40px;
+		}
+	}
+}
+
+@media(max-width: 1150px){
+	.related .slick-list{
+		padding-left: 0;
+	}
+}
+
+@media(max-width: 850px){
+	.related .slick-list{
+		padding-left: 0;
+	}
+	.related{
+		&__items{
+			margin-left: 50px;
+		}
+	}
+}
+
+@media(max-width: 640px){
+	.related{
+		&__items{
+			margin-left: 0;
+		}
+	}
+}
+
+@media(max-width: 594px){
+	.related__items{
+		.product__item{
+			max-width: 100%;
+		}
+	}
+}
+
+
+@media(max-width: 545px){
+	.related{
+		&__top{
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__title{
+			margin-bottom: 15px;
+			font-size: 30px;
+		}
+	}
+}

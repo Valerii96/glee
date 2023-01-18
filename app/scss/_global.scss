@@ -38,8 +38,10 @@ body{
 .breadcrumbs{
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	&__list{
 		display: flex;
+		flex-wrap: wrap;
 	}
 	&__item{
 		color: #979ba0;
